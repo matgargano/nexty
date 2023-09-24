@@ -8,8 +8,10 @@ export default async function Home() {
 
   return (
     <>
-      <AuthButton />
-      <pre>{JSON.stringify(tweets, null, 2)}</pre>
+      <pre>
+        <AuthButton />
+        {JSON.stringify(tweets, null, 2)}
+      </pre>
     </>
   );
 }
